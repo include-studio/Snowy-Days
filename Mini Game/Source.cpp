@@ -350,9 +350,7 @@ int main(int argc, char* argv[]) {
 				SDL_RenderCopy(renderer, heart_tx, NULL, &heart);
 				heart.x = 15;
 				break;
-			case 0://Game over - bgm_Wind Audio
-				gameover = true;
-				break;
+			
 			}
 			for (int i = 0; i < contflake; i++) {
 				SDL_RenderCopy(renderer, snowflake_tx, &snowsprite, &snowflake[i]);
@@ -394,6 +392,7 @@ int main(int argc, char* argv[]) {
 			
 		}
 	}
+	//End Audio
 	Mix_FreeMusic(bgm);
 	Mix_FreeMusic(bgm_Wind);
 	Mix_FreeChunk(death);
